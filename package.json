@@ -1,5 +1,5 @@
 {
-  "name": "dtslint",
+  "name": "@pre-bundled/dtslint",
   "version": "2.0.2",
   "description": "Runs tests on TypeScript definition files",
   "files": [
@@ -26,15 +26,7 @@
     "test": "npm run build && node test/test.js",
     "prepublishOnly": "npm run build && npm run test && npm run lint"
   },
-  "dependencies": {
-    "definitelytyped-header-parser": "3.8.1",
-    "dts-critic": "^2.2.3",
-    "fs-extra": "^6.0.1",
-    "request": "^2.88.0",
-    "strip-json-comments": "^2.0.1",
-    "tslint": "5.14.0",
-    "typescript": "next"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/fs-extra": "^5.0.2",
     "@types/node": "^7.10.7",
@@ -43,5 +35,14 @@
   "engines": {
     "node": ">=6.10.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bundledDependencies": [
+    "definitelytyped-header-parser",
+    "dts-critic",
+    "fs-extra",
+    "request",
+    "strip-json-comments",
+    "tslint",
+    "typescript"
+  ]
 }
